@@ -4,7 +4,6 @@
   font-family: 'Gudea', sans-serif;
   background-color: transparent;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: min(300px, 10%);

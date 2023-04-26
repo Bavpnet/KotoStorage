@@ -3,7 +3,6 @@
 
 .links {
   display: flex;
-  flex-direction: row;
   gap: 26px;
   justify-content: center;
   align-items: center;
@@ -54,7 +53,6 @@
   .links__btn {
     padding: 0 22px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
   }
 

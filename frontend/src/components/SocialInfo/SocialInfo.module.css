@@ -17,7 +17,6 @@
   .social {
     display: flex;
     list-style: none;
-    flex-direction: row;
     gap: 26px;
     justify-content: center;
     align-items: center;
