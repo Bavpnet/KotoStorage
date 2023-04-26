@@ -14,7 +14,7 @@ const Navbar = () => {
   return (
     <div className={classes.navbar}>
       <p className={classes.logo}>KotoStorage</p>
-      <LinkButtonGroup isMenuOpen={isMenuOpen} />
+      <LinkButtonGroup isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
       <div className={classes.gh_btn}>
         <UIButton text="GitHub" />
       </div>
