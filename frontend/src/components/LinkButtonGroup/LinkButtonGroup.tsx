@@ -9,20 +9,15 @@ const LinkButtonGroup: React.FC<Props> = ({ isMenuOpen }) => {
   const linkButtons = ['About', 'Upload', 'Gallery']
   return (
     <ul className={`${classes.links} ${isMenuOpen ? classes.active : ''}`}>
-      <li className={classes.line}>
-        <span />
-      </li>
+      <li className={classes.line} />
       {linkButtons.map((link, i) => (
         <li key={`linkbtn__${link}_${i}`} className={classes.links__btn}>
-          {link}
+          <span>{link}</span>
+          {isMenuOpen ? <span>{'->'}</span> : null}
         </li>
       ))}
-      <li className={classes.line}>
-        <span />
-      </li>
-      <li>
-        <SocialInfo />
-      </li>
+      <li className={classes.line} />
+      <SocialInfo />
     </ul>
   )
 }

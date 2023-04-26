@@ -51,7 +51,10 @@
   }
 
   .links__btn {
-    margin-left: 22px;
+    padding: 0 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
   }
 
   .line {
