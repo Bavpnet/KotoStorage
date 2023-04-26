@@ -9,8 +9,8 @@ export const SocialInfo = () => {
         Hear about exclusive news and changes in the cats world
       </p>
       <ul className={styles.social}>
-        {socialButtons.map((soc, i) => (
-          <li key={`soc__${soc}_${i}`}>{soc}</li>
+        {socialButtons.map(soc => (
+          <li key={`soc__${soc}`}>{soc}</li>
         ))}
       </ul>
     </div>

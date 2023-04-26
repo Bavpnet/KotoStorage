@@ -22,9 +22,9 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
   return (
     <ul className={`${styles.links} ${isMenuOpen ? styles.active : ''}`}>
       <li className={styles.line} />
-      {linkButtons.map((link, i) => (
+      {linkButtons.map(link => (
         <li
-          key={`linkbtn__${link}_${i}`}
+          key={`linkbtn__${link}`}
           className={styles.links__btn}
           onClick={() => onLinkClick(link)}
         >
