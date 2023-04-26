@@ -1,6 +1,6 @@
 import classes from './SocialInfo.module.css'
 
-const SocialInfo = () => {
+export const SocialInfo = () => {
   const socialButtons = ['Instagram', 'Telegram', 'Github']
   return (
     <div className={classes.info}>
@@ -16,5 +16,3 @@ const SocialInfo = () => {
     </div>
   )
 }
-
-export default SocialInfo

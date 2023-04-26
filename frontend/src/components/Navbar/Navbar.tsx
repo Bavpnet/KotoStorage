@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import LinkButtonGroup from '../LinkButtonGroup/LinkButtonGroup'
-import Hamburger from '../ui/Hamburger/Hamburger'
-import UIButton from '../ui/UIButton/UIButton'
+import { LinkButtonGroup } from '../LinkButtonGroup'
+import { Hamburger } from '../ui/Hamburger'
+import { UIButton } from '../ui/UIButton'
 import classes from './Navbar.module.css'
 
-const Navbar = () => {
+export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   const toggleMenu = () => {
@@ -22,5 +22,3 @@ const Navbar = () => {
     </div>
   )
 }
-
-export default Navbar

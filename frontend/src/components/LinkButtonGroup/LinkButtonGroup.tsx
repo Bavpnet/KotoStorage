@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import SocialInfo from '../SocialInfo/SocialInfo'
+import { SocialInfo } from '../SocialInfo'
 import classes from './LinkButtonGroup.module.css'
 
 type Props = {
@@ -7,7 +7,10 @@ type Props = {
   setIsMenuOpen: (isMenuOpen: boolean) => void
 }
 
-const LinkButtonGroup: React.FC<Props> = ({ isMenuOpen, setIsMenuOpen }) => {
+export const LinkButtonGroup: React.FC<Props> = ({
+  isMenuOpen,
+  setIsMenuOpen
+}) => {
   const linkButtons = ['About', 'Upload', 'Gallery']
   const navigate = useNavigate()
 
@@ -34,5 +37,3 @@ const LinkButtonGroup: React.FC<Props> = ({ isMenuOpen, setIsMenuOpen }) => {
     </ul>
   )
 }
-
-export default LinkButtonGroup

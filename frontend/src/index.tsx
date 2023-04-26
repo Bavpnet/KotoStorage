@@ -2,9 +2,9 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
-import About from './routes/About/About'
-import Upload from './routes/Upload/Upload'
-import Gallery from './routes/Gallery/Gallery'
+import { About } from './routes/About'
+import { Upload } from './routes/Upload'
+import { Gallery } from './routes/Gallery'
 
 const router = createBrowserRouter([
   {

@@ -5,7 +5,7 @@ type Props = {
   isMenuOpen: boolean
 }
 
-const Hamburger: React.FC<Props> = ({ onClick, isMenuOpen }) => {
+export const Hamburger: React.FC<Props> = ({ onClick, isMenuOpen }) => {
   return (
     <div
       className={`${classes.hamburger} ${isMenuOpen ? classes.active : ''}`}
@@ -17,5 +17,3 @@ const Hamburger: React.FC<Props> = ({ onClick, isMenuOpen }) => {
     </div>
   )
 }
-
-export default Hamburger
