@@ -1,0 +1,63 @@
+@value primary from './../../globals.css';
+@value mobile-max-width from './../../globals.css';
+
+.links {
+  display: flex;
+  flex-direction: row;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.links.active {
+  left: 0;
+}
+
+.links__btn {
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s;
+}
+
+.links__btn:hover {
+  text-shadow: 0 0 1px black;
+}
+
+.line {
+  display: none;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .links {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: primary;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    transition: 0.4s;
+    padding-top: 64px;
+    z-index: 5;
+  }
+
+  .links li {
+    width: 100%;
+  }
+
+  .links__btn {
+    margin-left: 22px;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #101010;
+  }
+}
