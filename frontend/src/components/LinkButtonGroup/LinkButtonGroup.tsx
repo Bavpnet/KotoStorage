@@ -29,7 +29,7 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
           onClick={() => onLinkClick(link)}
         >
           <span>{link}</span>
-          {isMenuOpen ? <span>{'->'}</span> : null}
+          {isMenuOpen && <span>{'->'}</span>}
         </li>
       ))}
       <li className={styles.line} />
