@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className={classes.gh_btn}>
         <UIButton text="GitHub" />
       </div>
-      <Hamburger onClick={toggleMenu} />
+      <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
     </div>
   )
 }

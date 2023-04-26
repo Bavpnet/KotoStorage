@@ -19,6 +19,7 @@
   font-size: 1rem;
   font-weight: 400;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .links__btn:hover {
