@@ -1,6 +1,31 @@
 import ReactDOM from 'react-dom/client'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
+import About from './routes/About/About'
+import Upload from './routes/Upload/Upload'
+import Gallery from './routes/Gallery/Gallery'
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      {
+        path: '/about',
+        element: <About />
+      },
+      {
+        path: '/upload',
+        element: <Upload />
+      },
+      {
+        path: '/gallery',
+        element: <Gallery />
+      }
+    ]
+  }
+])
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(<App />)
+root.render(<RouterProvider router={router} />)
