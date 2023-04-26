@@ -15,9 +15,11 @@ export const Navbar = () => {
     <div className={styles.navbar}>
       <p className={styles.logo}>KotoStorage</p>
       <LinkButtonGroup isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
+
       <div className={styles.gh_btn}>
         <UIButton text="GitHub" />
       </div>
+
       <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
     </div>
   )
