@@ -1,19 +1,22 @@
-import classes from './Hamburger.module.css'
+import styles from './Hamburger.module.css'
 
-type Props = {
+type HamburgerProps = {
   onClick: () => void
   isMenuOpen: boolean
 }
 
-export const Hamburger: React.FC<Props> = ({ onClick, isMenuOpen }) => {
+export const Hamburger: React.FC<HamburgerProps> = ({
+  onClick,
+  isMenuOpen
+}) => {
   return (
     <div
-      className={`${classes.hamburger} ${isMenuOpen ? classes.active : ''}`}
+      className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
       onClick={onClick}
     >
-      <span className={classes.bar} />
-      <span className={classes.bar} />
-      <span className={classes.bar} />
+      <span className={styles.bar} />
+      <span className={styles.bar} />
+      <span className={styles.bar} />
     </div>
   )
 }

@@ -1,13 +1,13 @@
 import { useNavigate } from 'react-router-dom'
 import { SocialInfo } from '../SocialInfo'
-import classes from './LinkButtonGroup.module.css'
+import styles from './LinkButtonGroup.module.css'
 
-type Props = {
+type LinkButtonGroupProps = {
   isMenuOpen: boolean
   setIsMenuOpen: (isMenuOpen: boolean) => void
 }
 
-export const LinkButtonGroup: React.FC<Props> = ({
+export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
   isMenuOpen,
   setIsMenuOpen
 }) => {
@@ -20,19 +20,19 @@ export const LinkButtonGroup: React.FC<Props> = ({
   }
 
   return (
-    <ul className={`${classes.links} ${isMenuOpen ? classes.active : ''}`}>
-      <li className={classes.line} />
+    <ul className={`${styles.links} ${isMenuOpen ? styles.active : ''}`}>
+      <li className={styles.line} />
       {linkButtons.map((link, i) => (
         <li
           key={`linkbtn__${link}_${i}`}
-          className={classes.links__btn}
+          className={styles.links__btn}
           onClick={() => onLinkClick(link)}
         >
           <span>{link}</span>
           {isMenuOpen ? <span>{'->'}</span> : null}
         </li>
       ))}
-      <li className={classes.line} />
+      <li className={styles.line} />
       <SocialInfo />
     </ul>
   )

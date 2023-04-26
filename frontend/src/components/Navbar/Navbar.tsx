@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { LinkButtonGroup } from '../LinkButtonGroup'
 import { Hamburger } from '../ui/Hamburger'
 import { UIButton } from '../ui/UIButton'
-import classes from './Navbar.module.css'
+import styles from './Navbar.module.css'
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -12,10 +12,10 @@ export const Navbar = () => {
   }
 
   return (
-    <div className={classes.navbar}>
-      <p className={classes.logo}>KotoStorage</p>
+    <div className={styles.navbar}>
+      <p className={styles.logo}>KotoStorage</p>
       <LinkButtonGroup isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
-      <div className={classes.gh_btn}>
+      <div className={styles.gh_btn}>
         <UIButton text="GitHub" />
       </div>
       <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />

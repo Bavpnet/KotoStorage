@@ -1,4 +1,4 @@
-import classes from './UIButton.module.css'
+import styles from './UIButton.module.css'
 
 type UIButtonProps = {
   text: string
@@ -6,8 +6,8 @@ type UIButtonProps = {
 
 export const UIButton: React.FC<UIButtonProps> = ({ text }) => {
   return (
-    <div className={classes.btn}>
-      <p className={classes.btn_text}>{text}</p>
+    <div className={styles.btn}>
+      <p className={styles.btn_text}>{text}</p>
     </div>
   )
 }
