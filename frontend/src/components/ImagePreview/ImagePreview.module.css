@@ -1,0 +1,20 @@
+.img {
+  width: 30vw;
+  height: 30vw;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.heading3 {
+  font-family: 'Graphik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
