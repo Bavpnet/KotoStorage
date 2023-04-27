@@ -11,16 +11,20 @@ export const Navbar = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const openGithub = () => {
+    window.open('https://github.com', '_blank')
+  }
+
   return (
-    <div className={styles.navbar}>
-      <p className={styles.logo}>KotoStorage</p>
+    <nav>
+      <h1 className={styles.logo}>KotoStorage</h1>
       <LinkButtonGroup isMenuOpen={isMenuOpen} setIsMenuOpen={setIsMenuOpen} />
 
       <div className={styles.gh_btn}>
-        <UIButton text="GitHub" />
+        <UIButton text="GitHub" onClick={openGithub} />
       </div>
 
       <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
-    </div>
+    </nav>
   )
 }

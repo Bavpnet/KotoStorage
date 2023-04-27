@@ -1,6 +1,6 @@
 @value mobile-max-width from './../../globals.css';
 
-.navbar {
+nav {
   font-family: 'Gudea', sans-serif;
   background-color: transparent;
   display: flex;
@@ -21,12 +21,12 @@
 }
 
 @media only screen and (max-width: mobile-max-width) {
-  .navbar {
+  nav {
     justify-content: space-between;
     padding: 18px 20px;
   }
 
-  .navbar > *:not(ul) {
+  nav > *:not(ul) {
     z-index: 10;
   }
 

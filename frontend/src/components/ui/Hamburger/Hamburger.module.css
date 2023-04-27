@@ -2,6 +2,9 @@
 
 .hamburger {
   display: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 
 .bar {

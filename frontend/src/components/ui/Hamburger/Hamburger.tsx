@@ -10,13 +10,13 @@ export const Hamburger: React.FC<HamburgerProps> = ({
   isMenuOpen
 }) => {
   return (
-    <div
+    <button
       className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
       onClick={onClick}
     >
       <span className={styles.bar} />
       <span className={styles.bar} />
       <span className={styles.bar} />
-    </div>
+    </button>
   )
 }

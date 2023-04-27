@@ -21,20 +21,21 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
 
   return (
     <ul className={`${styles.links} ${isMenuOpen ? styles.active : ''}`}>
-      <li className={styles.line} />
+      <li role="presentation" className={styles.line} />
 
       {linkButtons.map(link => (
-        <li
-          key={`linkbtn__${link}`}
-          className={styles.links__btn}
-          onClick={() => onLinkClick(link)}
-        >
-          <span>{link}</span>
-          {isMenuOpen && <span>{'->'}</span>}
+        <li key={`linkbtn__${link}`}>
+          <button
+            className={styles.links__btn}
+            onClick={() => onLinkClick(link)}
+          >
+            <span>{link}</span>
+            {isMenuOpen && <span>{'->'}</span>}
+          </button>
         </li>
       ))}
 
-      <li className={styles.line} />
+      <li role="presentation" className={styles.line} />
       <SocialInfo />
     </ul>
   )
