@@ -1,4 +1,4 @@
-.btn {
+.anc {
   background-color: black;
   color: white;
   border-radius: 10px;
@@ -9,4 +9,5 @@
   font-size: 1rem;
   font-weight: 400;
   padding: 8px 30px;
+  text-decoration: none;
 }

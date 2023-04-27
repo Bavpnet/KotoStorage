@@ -2,7 +2,7 @@ import { useToggle } from '../../hooks/useToggle'
 import { LinkButtonGroup } from '../LinkButtonGroup'
 import { SocialInfo } from '../SocialInfo'
 import { Hamburger } from '../ui/Hamburger'
-import { UIButton } from '../ui/UIButton'
+import { UIAnchor } from '../ui/UIAnchor'
 import styles from './Navbar.module.css'
 
 export const Navbar = () => {
@@ -18,11 +18,11 @@ export const Navbar = () => {
       </aside>
 
       <div className={styles.gh_btn}>
-        <UIButton text="GitHub">
-          <a href="https://github.com/Bavpnet/KotoStorage" target="_blank">
-            Github
-          </a>
-        </UIButton>
+        <UIAnchor
+          text={'GitHub'}
+          href="https://github.com/Bavpnet/KotoStorage"
+          target="_blank"
+        />
       </div>
 
       <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
