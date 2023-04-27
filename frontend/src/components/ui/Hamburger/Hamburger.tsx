@@ -8,15 +8,13 @@ type HamburgerProps = {
 export const Hamburger: React.FC<HamburgerProps> = ({
   onClick,
   isMenuOpen
-}) => {
-  return (
-    <button
-      className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
-      onClick={() => onClick()}
-    >
-      <span className={styles.bar} />
-      <span className={styles.bar} />
-      <span className={styles.bar} />
-    </button>
-  )
-}
+}) => (
+  <button
+    className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
+    onClick={() => onClick()}
+  >
+    <span className={styles.bar} />
+    <span className={styles.bar} />
+    <span className={styles.bar} />
+  </button>
+)
