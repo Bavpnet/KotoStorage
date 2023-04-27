@@ -1,5 +1,4 @@
 import { useNavigate } from 'react-router-dom'
-import { SocialInfo } from '../SocialInfo'
 import styles from './LinkButtonGroup.module.css'
 
 type LinkButtonGroupProps = {
@@ -20,7 +19,7 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
   }
 
   return (
-    <ul className={`${styles.links} ${isMenuOpen ? styles.active : ''}`}>
+    <ul className={`${styles.links}`}>
       <li role="presentation" className={styles.line} />
 
       {linkButtons.map(link => (
@@ -36,7 +35,6 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
       ))}
 
       <li role="presentation" className={styles.line} />
-      <SocialInfo />
     </ul>
   )
 }
