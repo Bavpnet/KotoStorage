@@ -8,10 +8,6 @@ import styles from './Navbar.module.css'
 export const Navbar = () => {
   const [isMenuOpen, toggleMenu] = useToggle(false)
 
-  const openGithub = () => {
-    window.open('https://github.com/Bavpnet/KotoStorage', '_blank')
-  }
-
   return (
     <nav>
       <h1 className={styles.logo}>KotoStorage</h1>
@@ -22,7 +18,11 @@ export const Navbar = () => {
       </aside>
 
       <div className={styles.gh_btn}>
-        <UIButton text="GitHub" onClick={openGithub} />
+        <UIButton text="GitHub">
+          <a href="https://github.com/Bavpnet/KotoStorage" target="_blank">
+            Github
+          </a>
+        </UIButton>
       </div>
 
       <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
