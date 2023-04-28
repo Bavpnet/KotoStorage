@@ -1,3 +1,5 @@
+@value mobile-max-width from './../../globals.css';
+
 .upload {
   font-family: 'Graphik', sans-serif;
   display: flex;
@@ -27,10 +29,28 @@
 }
 
 .upload_form {
-  width: 50%;
+  min-width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 16px;
   margin-top: 50px;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .upload_form {
+    width: 90vw;
+  }
+
+  .heading1 {
+    font-size: 1.3rem;
+  }
+
+  .heading3 {
+    font-size: 0.6rem;
+  }
+
+  .upload > header {
+    padding-top: 60px;
+  }
 }
