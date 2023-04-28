@@ -17,7 +17,7 @@ export const Navbar = () => {
         <SocialInfo isFooterInfo={false} />
       </aside>
 
-      <div className={styles.gh_btn}>
+      <div className={styles.ghBtn}>
         <UIAnchor
           text={'GitHub'}
           href="https://github.com/Bavpnet/KotoStorage"

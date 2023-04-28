@@ -10,7 +10,7 @@
   padding: 0;
 }
 
-.links__btn {
+.linksBtn {
   font-family: 'Gudea', sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -20,7 +20,7 @@
   background-color: transparent;
 }
 
-.links__btn:hover {
+.linksBtn:hover {
   text-shadow: 0 0 1px black;
 }
 
@@ -42,7 +42,7 @@
     width: 100%;
   }
 
-  .links__btn {
+  .linksBtn {
     padding: 0 22px;
     display: flex;
     justify-content: space-between;

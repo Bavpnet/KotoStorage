@@ -25,7 +25,7 @@ aside.active {
   font-weight: 700;
 }
 
-.gh_btn {
+.ghBtn {
   cursor: pointer;
 }
 
@@ -54,7 +54,7 @@ aside.active {
     transition: 0.4s;
   }
 
-  .gh_btn {
+  .ghBtn {
     display: none;
   }
 }

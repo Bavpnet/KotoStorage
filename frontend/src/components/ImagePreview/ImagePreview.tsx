@@ -1,4 +1,4 @@
-import { SyntheticEvent, useEffect, useState } from 'react'
+import { SyntheticEvent } from 'react'
 import styles from './ImagePreview.module.css'
 
 type ImagePreviewProps = {

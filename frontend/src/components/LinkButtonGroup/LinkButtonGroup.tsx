@@ -24,10 +24,7 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
 
       {linkButtons.map(link => (
         <li key={`linkbtn__${link}`}>
-          <button
-            className={styles.links__btn}
-            onClick={() => onLinkClick(link)}
-          >
+          <button className={styles.linksBtn} onClick={() => onLinkClick(link)}>
             <span>{link}</span>
             {isMenuOpen && <span>{'->'}</span>}
           </button>
