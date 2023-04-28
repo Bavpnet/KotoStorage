@@ -1,3 +1,5 @@
+@value mobile-max-width from './../../../globals.css';
+
 .inp {
   width: 100%;
   float: left;
@@ -19,4 +21,12 @@
 
 .inp:focus {
   outline: none;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .inp {
+    font-size: clamp(0.6rem, 3vw, 1rem);
+    padding-bottom: clamp(0.5rem, 2vw, 1rem);
+    padding-left: clamp(0.5rem, 2vw, 1rem);
+  }
 }

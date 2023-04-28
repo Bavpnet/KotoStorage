@@ -1,3 +1,5 @@
+@value mobile-max-width from './../../../globals.css';
+
 .btn {
   background-color: black;
   color: white;
@@ -10,4 +12,12 @@
   font-weight: 400;
   padding: 18px 36px;
   min-width: max-content;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .btn {
+    font-size: clamp(0.45rem, 3vw, 1rem);
+    padding: clamp(8px, 3vw, 18px) clamp(18px, 3vw, 36px);
+    border-radius: clamp(5px, 3vw, 10px);
+  }
 }
