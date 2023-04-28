@@ -16,3 +16,7 @@
   color: #000;
   opacity: 0.5;
 }
+
+.inp:focus {
+  outline: none;
+}
