@@ -1,14 +1,17 @@
+@value mobile-max-width from './../../globals.css';
+
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 64px;
+  width: 100%;
 }
 
 .footerInfo {
   display: flex;
-  gap: 115px;
+  gap: min(115px, 15vw);
   justify-content: center;
   align-items: center;
 }
@@ -26,13 +29,24 @@
 }
 
 .img {
-  width: min(300px, 20vw);
-  height: min(300px, 20vw);
+  width: min(300px, 50vw);
+  height: min(300px, 50vw);
 }
 
 .heading3 {
   font-family: 'Qwigley', cursive;
-  font-size: 4rem;
+  font-size: min(4rem, 10vw);
   font-weight: 400;
   white-space: nowrap;
+}
+
+@media only screen and (max-width: 950px) {
+  .footerInfo {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .footer {
+    padding-bottom: 64px;
+  }
 }

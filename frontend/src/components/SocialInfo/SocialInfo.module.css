@@ -9,7 +9,6 @@
   flex-direction: column;
   gap: 12px;
   justify-content: center;
-  align-items: center;
 }
 
 .social {
@@ -45,5 +44,10 @@
     gap: 12px;
     justify-content: center;
     align-items: center;
+  }
+
+  .inFooter .infoTitle,
+  .inFooter .infoDesc {
+    display: none;
   }
 }
