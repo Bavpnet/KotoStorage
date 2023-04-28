@@ -14,7 +14,7 @@ export const Navbar = () => {
 
       <aside className={`${isMenuOpen ? styles.active : ''}`}>
         <LinkButtonGroup isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
-        <SocialInfo />
+        <SocialInfo isFooterInfo={false} />
       </aside>
 
       <div className={styles.gh_btn}>

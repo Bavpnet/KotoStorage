@@ -13,13 +13,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-html,
-body,
-#root,
-.app {
-  min-height: 100vh;
-}
-
 .app {
   background-color: #e4d6c0;
 }

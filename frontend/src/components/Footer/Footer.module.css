@@ -1,0 +1,38 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.footerInfo {
+  display: flex;
+  gap: 115px;
+  justify-content: center;
+  align-items: center;
+}
+
+.line {
+  height: 3px;
+  width: 100%;
+  background-color: #5e564b;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img {
+  width: min(300px, 20vw);
+  height: min(300px, 20vw);
+}
+
+.heading3 {
+  font-family: 'Qwigley', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+  white-space: nowrap;
+}
