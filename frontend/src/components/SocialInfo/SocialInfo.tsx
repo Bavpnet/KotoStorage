@@ -1,11 +1,15 @@
 import styles from './SocialInfo.module.css'
 
-export const SocialInfo = () => {
+type SocialInfoProps = {
+  isFooterInfo: boolean
+}
+
+export const SocialInfo: React.FC<SocialInfoProps> = ({ isFooterInfo }) => {
   const socialButtons = ['Instagram', 'Telegram', 'Github']
   return (
-    <section className={styles.info}>
-      <h2 className={styles.info__title}>Follow us in the media</h2>
-      <p className={styles.info__desc}>
+    <section className={isFooterInfo ? styles.inFooter : styles.inSidebar}>
+      <h2 className={styles.infoTitle}>Follow us in the media</h2>
+      <p className={styles.infoDesc}>
         Hear about exclusive news and changes in the cats world
       </p>
 

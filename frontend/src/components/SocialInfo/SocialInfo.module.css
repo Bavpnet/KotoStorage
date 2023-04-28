@@ -1,41 +1,49 @@
 @value mobile-max-width from './../../globals.css';
 
-.info {
+.inSidebar {
   display: none;
 }
 
+.inFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.infoTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.infoDesc {
+  font-size: 0.6rem;
+  max-width: 270px;
+}
+
+.social li {
+  font-size: 0.58rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
 @media only screen and (max-width: mobile-max-width) {
-  .info {
+  .inSidebar {
     display: flex;
     flex-direction: column;
     width: 100%;
     gap: 12px;
     justify-content: center;
     align-items: center;
-  }
-
-  .social {
-    display: flex;
-    list-style: none;
-    gap: 26px;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-  }
-
-  .info__title {
-    font-size: 1.3rem;
-    font-weight: 700;
-  }
-
-  .info__desc {
-    font-size: 0.6rem;
-    max-width: 270px;
-  }
-
-  .social li {
-    font-size: 0.58rem;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
   }
 }
