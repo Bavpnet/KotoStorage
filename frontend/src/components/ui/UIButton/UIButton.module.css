@@ -12,6 +12,7 @@
   font-weight: 400;
   padding: 18px 36px;
   min-width: max-content;
+  cursor: pointer;
 }
 
 @media only screen and (max-width: mobile-max-width) {

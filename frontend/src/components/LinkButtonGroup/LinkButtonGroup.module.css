@@ -20,7 +20,8 @@
   background-color: transparent;
 }
 
-.linksBtn:hover {
+.linksBtn:hover,
+.linksBtn.focused {
   text-shadow: 0 0 1px black;
 }
 

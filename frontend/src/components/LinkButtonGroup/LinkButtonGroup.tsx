@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom'
+import { useCurrentLocation } from '../../hooks/useCurrentLocation'
 import styles from './LinkButtonGroup.module.css'
 
 type LinkButtonGroupProps = {
@@ -12,6 +13,7 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
 }) => {
   const linkButtons = ['About', 'Upload', 'Gallery']
   const navigate = useNavigate()
+  const currentLocation = useCurrentLocation()
 
   const onLinkClick = (link: string) => {
     navigate(`/${link.toLowerCase()}`)
@@ -24,7 +26,12 @@ export const LinkButtonGroup: React.FC<LinkButtonGroupProps> = ({
 
       {linkButtons.map(link => (
         <li key={`linkbtn__${link}`}>
-          <button className={styles.linksBtn} onClick={() => onLinkClick(link)}>
+          <button
+            className={`${styles.linksBtn} ${
+              currentLocation === link.toLowerCase() ? styles.focused : ''
+            }`}
+            onClick={() => onLinkClick(link)}
+          >
             <span>{link}</span>
             {isMenuOpen && <span>{'->'}</span>}
           </button>
