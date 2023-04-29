@@ -25,7 +25,7 @@ export const Navbar = () => {
         />
       </div>
 
-      <Hamburger onClick={toggleMenu} isMenuOpen={isMenuOpen} />
+      <Hamburger onClick={() => toggleMenu()} isMenuOpen={isMenuOpen} />
     </nav>
   )
 }
