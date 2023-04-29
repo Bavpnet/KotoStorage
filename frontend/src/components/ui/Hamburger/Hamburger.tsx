@@ -1,17 +1,15 @@
 import styles from './Hamburger.module.css'
 
 type HamburgerProps = {
-  onClick: () => void
   isMenuOpen: boolean
 }
 
-export const Hamburger: React.FC<HamburgerProps> = ({
-  onClick,
-  isMenuOpen
-}) => (
+export const Hamburger: React.FC<
+  React.ButtonHTMLAttributes<HTMLButtonElement> & HamburgerProps
+> = ({ isMenuOpen, ...rest }) => (
   <button
     className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
-    onClick={() => onClick()}
+    {...rest}
   >
     <span className={styles.bar} />
     <span className={styles.bar} />

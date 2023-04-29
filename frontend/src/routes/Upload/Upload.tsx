@@ -9,7 +9,6 @@ export const Upload = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(url)
   }
 
   return (

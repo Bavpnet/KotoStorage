@@ -5,7 +5,7 @@ type UIAnchorProps = {
 }
 
 export const UIAnchor: React.FC<
-  React.HTMLProps<HTMLAnchorElement> & UIAnchorProps
+  React.AnchorHTMLAttributes<HTMLAnchorElement> & UIAnchorProps
 > = ({ text, ...rest }) => (
   <a className={styles.anc} {...rest}>
     {text}
