@@ -35,7 +35,7 @@
 
 .heading3 {
   font-family: 'Qwigley', cursive;
-  font-size: min(4rem, 10vw);
+  font-size: min(4rem, 15vw);
   font-weight: 400;
   white-space: nowrap;
 }
