@@ -1,0 +1,41 @@
+@value mobile-max-width from './../../globals.css';
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 64px;
+}
+
+.gallery header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 132px;
+  gap: 34px;
+  font-family: 'Graphik', sans-serif;
+  font-size: 1.3rem;
+}
+
+.gallery > main {
+  margin-top: 33px;
+  width: min(1144px, 95vw);
+}
+
+.gallery header h1,
+.gallery header h5 {
+  text-align: center;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .gallery header {
+    margin-top: 32px;
+    width: 60vw;
+    gap: 14px;
+    font-size: 0.65rem;
+  }
+}
