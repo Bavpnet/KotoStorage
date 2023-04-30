@@ -14,11 +14,11 @@ export const Upload = () => {
   return (
     <div className={styles.upload}>
       <header>
-        <h1 className={styles.heading1}>Upload a photo</h1>
-        <h3 className={styles.heading3}>Provide a link for your cat's photo</h3>
+        <h1>Upload a photo</h1>
+        <h5>Provide a link for your cat's photo</h5>
       </header>
 
-      <form className={styles.upload_form} onSubmit={handleSubmit}>
+      <form className={styles.uploadForm} onSubmit={handleSubmit}>
         <UIInput
           placeholder="Paste your link here"
           value={url}
