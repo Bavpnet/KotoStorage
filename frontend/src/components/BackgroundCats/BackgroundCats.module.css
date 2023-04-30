@@ -1,0 +1,10 @@
+.bgCats {
+  background-image: url('./../../assets/bg_cats.png');
+  height: 1024px;
+}
+
+.wrapperOpacity {
+  background-color: rgba(228, 214, 192, 0.65);
+  height: 100%;
+  padding-top: 64px;
+}
