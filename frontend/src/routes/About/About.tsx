@@ -20,7 +20,9 @@ export const About = () => {
       </BackgroundCats>
 
       <main>
-        <img src={CatImg1} alt="Cat" />
+        <picture>
+          <img src={CatImg1} alt="Cat" />
+        </picture>
 
         <div>
           <InformationSection
@@ -33,7 +35,7 @@ export const About = () => {
           />
         </div>
 
-        <div>
+        <div className={styles.mar}>
           <InformationSection
             title="What is KotoStorage?"
             alignment="left"
@@ -49,8 +51,12 @@ export const About = () => {
           />
         </div>
 
-        <img src={CatImg2} alt="Cat" />
+        <picture>
+          <img src={CatImg2} alt="Cat" />
+        </picture>
       </main>
+      <img src={CatImg1} alt="Cat" className={styles.cat1} />
+      <img src={CatImg2} alt="Cat" className={styles.cat2} />
     </div>
   )
 }

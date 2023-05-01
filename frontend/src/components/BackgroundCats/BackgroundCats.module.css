@@ -1,13 +1,14 @@
 .bgCats {
   background-image: url('./../../assets/bg_cats.png');
   height: 1024px;
+  width: 100%;
 }
 
 .wrapperOpacity {
   background-color: rgba(228, 214, 192, 0.65);
   height: 100%;
+  width: 100%;
   padding-top: 64px;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
