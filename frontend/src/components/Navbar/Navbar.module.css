@@ -11,7 +11,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: min(300px, 10%);
+  gap: min(344px, 10%);
   overflow: hidden;
   padding-top: 32px;
   z-index: 10;
