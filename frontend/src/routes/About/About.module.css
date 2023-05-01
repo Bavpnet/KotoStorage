@@ -1,1 +1,53 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.875rem;
+  font-family: 'Graphik', sans-serif;
+  gap: 44px;
+}
 
+.about p {
+  font-size: 1rem;
+}
+
+.about h1 {
+  font-weight: 700;
+}
+
+.about h3,
+.about p {
+  font-weight: 400;
+}
+
+.about header {
+  padding-top: 300px;
+  padding-left: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 295px;
+}
+
+.info {
+  width: 60%;
+}
+
+.about main {
+  width: 60vw;
+  display: grid;
+  grid-template-areas:
+    'img info'
+    'info img';
+  grid-template-columns: 1fr 1fr;
+  row-gap: 44px;
+}
+
+.about main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
