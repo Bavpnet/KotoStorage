@@ -1,0 +1,40 @@
+.infoPar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.alignRight {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.pars {
+  margin-top: 73px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 85%;
+  line-height: 31px;
+}
+
+.low {
+  margin-top: 28px;
+}
+
+.high {
+  margin-top: 84px;
+}
+
+.infoPar span {
+  background-color: #5e564b;
+  height: 3px;
+  width: 85%;
+}
+
+.infoPar .par3 {
+  margin-top: 28px;
+  width: 85%;
+}
