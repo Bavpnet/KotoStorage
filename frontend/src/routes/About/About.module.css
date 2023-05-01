@@ -14,19 +14,16 @@
 
 .about p {
   font-size: clamp(0.66rem, 1.5vw, 1rem);
+  font-weight: 400;
 }
 
 .about h3 {
   font-size: clamp(1.25rem, 3vw, 2.6rem);
+  font-weight: 400;
 }
 
 .about h1 {
   font-weight: 700;
-}
-
-.about h3,
-.about p {
-  font-weight: 400;
 }
 
 .about header {
@@ -75,6 +72,10 @@
     align-self: center;
   }
 
+  .about p {
+    line-height: 21.28px;
+  }
+
   .about header {
     padding-top: 128px;
     justify-content: center;
@@ -84,28 +85,17 @@
     text-align: center;
   }
 
-  .about p {
-    line-height: 21.28px;
-  }
-
   .about main {
     grid-template-columns: 1fr;
+    row-gap: 236px;
   }
 
   .about main > picture {
     display: none;
   }
 
-  .about main > img {
-    display: block;
-  }
-
   .mar {
     margin-bottom: 100px;
-  }
-
-  .about main {
-    row-gap: 236px;
   }
 
   .cat1 {
