@@ -17,6 +17,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.dockerignore
 prettier.config.js
 
 npm-debug.log*

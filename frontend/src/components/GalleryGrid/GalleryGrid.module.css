@@ -13,3 +13,10 @@
   border-radius: 10px;
   object-fit: cover;
 }
+
+.notFound {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}

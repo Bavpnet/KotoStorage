@@ -5,5 +5,9 @@ export const useControlledInput = (initialValue: string) => {
   const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setValue(event.target.value)
   }
-  return [value, onChange] as const
+
+  const reset = () => {
+    setValue('')
+  }
+  return [value, onChange, reset] as const
 }

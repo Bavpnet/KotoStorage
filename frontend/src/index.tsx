@@ -1,5 +1,5 @@
 import ReactDOM from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, Navigate, RouterProvider } from 'react-router-dom'
 import './index.css'
 import App from './App'
 import { About } from './routes/About'
@@ -12,7 +12,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/about',
+        path: '/',
         element: <About />
       },
       {
@@ -22,6 +22,10 @@ const router = createBrowserRouter([
       {
         path: '/gallery',
         element: <Gallery />
+      },
+      {
+        path: '*',
+        element: <Navigate to="/" />
       }
     ]
   }
