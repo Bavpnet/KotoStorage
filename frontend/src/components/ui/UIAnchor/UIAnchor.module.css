@@ -1,0 +1,13 @@
+.anc {
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 8px 30px;
+  text-decoration: none;
+}

@@ -1,0 +1,22 @@
+.galleryGrid {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  grid-gap: 32px;
+  grid-template-columns: repeat(auto-fill, 360px);
+}
+
+.galleryGrid > img {
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.notFound {
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+}

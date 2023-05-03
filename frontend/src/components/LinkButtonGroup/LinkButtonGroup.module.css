@@ -1,0 +1,59 @@
+@value primary from './../../globals.css';
+@value mobile-max-width from './../../globals.css';
+
+.links {
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+
+.linksBtn {
+  font-family: 'Gudea', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  transition: 0.3s;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+.linksBtn:hover,
+.linksBtn.focused {
+  text-shadow: 0 0 1px black;
+}
+
+.line {
+  display: none;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    z-index: 5;
+  }
+
+  .links li {
+    width: 100%;
+  }
+
+  .linksBtn {
+    padding: 0 22px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #101010;
+  }
+}

@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  webapps:
+    build:
+      context: '.'
+      args:
+        REACT_APP_BASE_URL: 'https://api-sna.dropteam.ru'
+    restart: on-failure
+    ports:
+      - '80:80'

@@ -1,0 +1,119 @@
+@value mobile-max-width from './../../globals.css';
+
+.about {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(0.7rem, 2.5vw, 1.875rem);
+  font-family: 'Graphik', sans-serif;
+  gap: 44px;
+}
+
+.about p {
+  font-size: clamp(0.66rem, 1.5vw, 1rem);
+  font-weight: 400;
+}
+
+.about h3 {
+  font-size: clamp(1.25rem, 3vw, 2.6rem);
+  font-weight: 400;
+}
+
+.about h1 {
+  font-weight: 700;
+}
+
+.about header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: clamp(192px, 10vw, 295px);
+}
+
+.info {
+  width: 47vw;
+  padding-bottom: 64px;
+}
+
+.about main {
+  width: min(calc(1920px * 0.6), 90vw);
+  display: grid;
+  grid-template-areas:
+    'img info'
+    'info img';
+  grid-template-columns: 1fr 1fr;
+  row-gap: 44px;
+}
+
+.about main > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+}
+
+.about main > picture {
+  overflow: hidden;
+}
+
+.cat1,
+.cat2 {
+  display: none;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .info {
+    padding: 0;
+    width: 85vw;
+    align-self: center;
+  }
+
+  .about p {
+    line-height: 21.28px;
+  }
+
+  .about header {
+    padding-top: 128px;
+    justify-content: center;
+  }
+
+  .about header > h1 {
+    text-align: center;
+  }
+
+  .about main {
+    grid-template-columns: 1fr;
+    row-gap: 236px;
+  }
+
+  .about main > picture {
+    display: none;
+  }
+
+  .mar {
+    margin-bottom: 100px;
+  }
+
+  .cat1 {
+    display: block;
+    position: absolute;
+    top: 1100px;
+    right: 100px;
+    width: 90vw;
+    height: auto;
+    opacity: 0.35;
+  }
+  .cat2 {
+    display: block;
+    position: absolute;
+    top: 1650px;
+    left: 100px;
+    width: 90vw;
+    height: auto;
+    opacity: 0.35;
+  }
+}

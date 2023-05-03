@@ -1,0 +1,87 @@
+@value mobile-max-width from './../../globals.css';
+
+.inSidebar {
+  display: none;
+}
+
+.inSidebar .infoTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.inSidebar .infoDesc {
+  font-size: 0.6rem;
+  max-width: 270px;
+}
+
+.inSidebar .social li {
+  font-size: 0.58rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.inSidebar .social {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.inFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+}
+
+.inFooter .infoTitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.inFooter .infoDesc {
+  font-size: 1rem;
+  max-width: 404px;
+}
+
+.inFooter .social li {
+  font-size: 0.83rem;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+}
+
+.inFooter .social {
+  display: flex;
+  list-style: none;
+  gap: 52px;
+  align-items: center;
+  padding: 0;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .inSidebar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .inFooter .infoTitle,
+  .inFooter .infoDesc {
+    display: none;
+  }
+
+  .inFooter .social {
+    gap: clamp(26px, 5vw, 52px);
+    margin-top: clamp(13px, 5vw, 50px);
+  }
+
+  .inFooter .social li {
+    font-size: clamp(0.58rem, 1.5vw, 0.83rem);
+  }
+}

@@ -1,0 +1,38 @@
+@value mobile-max-width from './../../globals.css';
+
+.img {
+  width: min(700px, 90vw);
+  height: min(700px, 90vw);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.imgContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 38px;
+  align-items: center;
+  margin-top: 90px;
+}
+
+.heading3 {
+  font-family: 'Graphik', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: mobile-max-width) {
+  .img {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .heading3 {
+    font-size: 0.6rem;
+  }
+
+  .imgContainer {
+    gap: 16px;
+    margin-top: 50px;
+  }
+}
