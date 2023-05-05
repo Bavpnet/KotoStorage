@@ -11,7 +11,6 @@ RUN poetry config virtualenvs.create false && poetry install
 
 COPY . /rest-app
 
-COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 
 EXPOSE 8000
