@@ -25,7 +25,7 @@ jobs:
         name: Backend Build and push
         uses: docker/build-push-action@v4
         with:
-          context: .
+          context: ./backend
           file: ./backend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/kotostorage-backend:latest
