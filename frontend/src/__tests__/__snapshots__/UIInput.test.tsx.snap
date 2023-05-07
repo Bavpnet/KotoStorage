@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UIInput renders correctly 1`] = `
+<input
+  className="inp"
+/>
+`;
+
+exports[`UIInput renders correctly with placeholder 1`] = `
+<input
+  className="inp"
+  placeholder="test"
+/>
+`;

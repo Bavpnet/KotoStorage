@@ -1,0 +1,165 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders correctly 1`] = `
+<div
+  className="app"
+>
+  <nav>
+    <h1
+      className="logo"
+    >
+      KotoStorage
+    </h1>
+    <aside
+      className=""
+    >
+      <ul
+        className="links"
+      >
+        <li
+          className="line"
+          role="presentation"
+        />
+        <li>
+          <button
+            className="linksBtn "
+            onClick={[Function]}
+          >
+            <span>
+              About
+            </span>
+          </button>
+        </li>
+        <li>
+          <button
+            className="linksBtn "
+            onClick={[Function]}
+          >
+            <span>
+              Upload
+            </span>
+          </button>
+        </li>
+        <li>
+          <button
+            className="linksBtn "
+            onClick={[Function]}
+          >
+            <span>
+              Gallery
+            </span>
+          </button>
+        </li>
+        <li
+          className="line"
+          role="presentation"
+        />
+      </ul>
+      <section
+        className="inSidebar"
+      >
+        <h2
+          className="infoTitle"
+        >
+          Follow us in the media
+        </h2>
+        <p
+          className="infoDesc"
+        >
+          Hear about exclusive news and changes in the cats world
+        </p>
+        <ul
+          className="social"
+        >
+          <li>
+            Instagram
+          </li>
+          <li>
+            Telegram
+          </li>
+          <li>
+            Github
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <div
+      className="ghBtn"
+    >
+      <a
+        className="anc"
+        href="https://github.com/Bavpnet/KotoStorage"
+        target="_blank"
+      >
+        GitHub
+      </a>
+    </div>
+    <button
+      className="hamburger "
+      onClick={[Function]}
+    >
+      <span
+        className="bar"
+      />
+      <span
+        className="bar"
+      />
+      <span
+        className="bar"
+      />
+    </button>
+  </nav>
+  <footer
+    className="footer"
+  >
+    <span
+      className="line"
+    />
+    <div
+      className="footerInfo"
+    >
+      <div
+        className="logo"
+      >
+        <img
+          alt="logo"
+          className="img"
+          src="logo.png"
+        />
+        <h3
+          className="heading3"
+        >
+          "Murr means love"
+        </h3>
+      </div>
+      <section
+        className="inFooter"
+      >
+        <h2
+          className="infoTitle"
+        >
+          Follow us in the media
+        </h2>
+        <p
+          className="infoDesc"
+        >
+          Hear about exclusive news and changes in the cats world
+        </p>
+        <ul
+          className="social"
+        >
+          <li>
+            Instagram
+          </li>
+          <li>
+            Telegram
+          </li>
+          <li>
+            Github
+          </li>
+        </ul>
+      </section>
+    </div>
+  </footer>
+</div>
+`;

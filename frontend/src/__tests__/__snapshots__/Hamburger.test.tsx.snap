@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hamburger renders correctly 1`] = `
+<button
+  className="hamburger active"
+>
+  <span
+    className="bar"
+  />
+  <span
+    className="bar"
+  />
+  <span
+    className="bar"
+  />
+</button>
+`;

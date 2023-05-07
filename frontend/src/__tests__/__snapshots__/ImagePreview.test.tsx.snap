@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ImagePreview renders correctly 1`] = `
+<picture
+  className="imgContainer"
+>
+  <h3
+    className="heading3"
+  >
+    Preview of the photo:
+  </h3>
+  <img
+    alt="preview"
+    className="img"
+    onError={[Function]}
+    onLoad={[Function]}
+    src="https://http.cat/200"
+  />
+</picture>
+`;

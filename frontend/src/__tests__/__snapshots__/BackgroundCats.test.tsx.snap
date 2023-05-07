@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BackgroundCats renders correctly 1`] = `
+<div
+  className="bgCats"
+>
+  <div
+    className="wrapperOpacity"
+  />
+</div>
+`;

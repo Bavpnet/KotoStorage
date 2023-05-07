@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SocialInfo renders correctly footer 1`] = `
+<section
+  className="inFooter"
+>
+  <h2
+    className="infoTitle"
+  >
+    Follow us in the media
+  </h2>
+  <p
+    className="infoDesc"
+  >
+    Hear about exclusive news and changes in the cats world
+  </p>
+  <ul
+    className="social"
+  >
+    <li>
+      Instagram
+    </li>
+    <li>
+      Telegram
+    </li>
+    <li>
+      Github
+    </li>
+  </ul>
+</section>
+`;
+
+exports[`SocialInfo renders correctly navbar 1`] = `
+<section
+  className="inSidebar"
+>
+  <h2
+    className="infoTitle"
+  >
+    Follow us in the media
+  </h2>
+  <p
+    className="infoDesc"
+  >
+    Hear about exclusive news and changes in the cats world
+  </p>
+  <ul
+    className="social"
+  >
+    <li>
+      Instagram
+    </li>
+    <li>
+      Telegram
+    </li>
+    <li>
+      Github
+    </li>
+  </ul>
+</section>
+`;

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer renders correctly 1`] = `
+<footer
+  className="footer"
+>
+  <span
+    className="line"
+  />
+  <div
+    className="footerInfo"
+  >
+    <div
+      className="logo"
+    >
+      <img
+        alt="logo"
+        className="img"
+        src="logo.png"
+      />
+      <h3
+        className="heading3"
+      >
+        "Murr means love"
+      </h3>
+    </div>
+    <section
+      className="inFooter"
+    >
+      <h2
+        className="infoTitle"
+      >
+        Follow us in the media
+      </h2>
+      <p
+        className="infoDesc"
+      >
+        Hear about exclusive news and changes in the cats world
+      </p>
+      <ul
+        className="social"
+      >
+        <li>
+          Instagram
+        </li>
+        <li>
+          Telegram
+        </li>
+        <li>
+          Github
+        </li>
+      </ul>
+    </section>
+  </div>
+</footer>
+`;

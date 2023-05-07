@@ -1,0 +1,109 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders correctly 1`] = `
+<nav>
+  <h1
+    className="logo"
+  >
+    KotoStorage
+  </h1>
+  <aside
+    className=""
+  >
+    <ul
+      className="links"
+    >
+      <li
+        className="line"
+        role="presentation"
+      />
+      <li>
+        <button
+          className="linksBtn "
+          onClick={[Function]}
+        >
+          <span>
+            About
+          </span>
+        </button>
+      </li>
+      <li>
+        <button
+          className="linksBtn "
+          onClick={[Function]}
+        >
+          <span>
+            Upload
+          </span>
+        </button>
+      </li>
+      <li>
+        <button
+          className="linksBtn "
+          onClick={[Function]}
+        >
+          <span>
+            Gallery
+          </span>
+        </button>
+      </li>
+      <li
+        className="line"
+        role="presentation"
+      />
+    </ul>
+    <section
+      className="inSidebar"
+    >
+      <h2
+        className="infoTitle"
+      >
+        Follow us in the media
+      </h2>
+      <p
+        className="infoDesc"
+      >
+        Hear about exclusive news and changes in the cats world
+      </p>
+      <ul
+        className="social"
+      >
+        <li>
+          Instagram
+        </li>
+        <li>
+          Telegram
+        </li>
+        <li>
+          Github
+        </li>
+      </ul>
+    </section>
+  </aside>
+  <div
+    className="ghBtn"
+  >
+    <a
+      className="anc"
+      href="https://github.com/Bavpnet/KotoStorage"
+      target="_blank"
+    >
+      GitHub
+    </a>
+  </div>
+  <button
+    className="hamburger "
+    onClick={[Function]}
+  >
+    <span
+      className="bar"
+    />
+    <span
+      className="bar"
+    />
+    <span
+      className="bar"
+    />
+  </button>
+</nav>
+`;

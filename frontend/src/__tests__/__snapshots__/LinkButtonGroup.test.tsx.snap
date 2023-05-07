@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LinkButtonGroup renders correctly 1`] = `
+<ul
+  className="links"
+>
+  <li
+    className="line"
+    role="presentation"
+  />
+  <li>
+    <button
+      className="linksBtn "
+      onClick={[Function]}
+    >
+      <span>
+        About
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="linksBtn "
+      onClick={[Function]}
+    >
+      <span>
+        Upload
+      </span>
+    </button>
+  </li>
+  <li>
+    <button
+      className="linksBtn "
+      onClick={[Function]}
+    >
+      <span>
+        Gallery
+      </span>
+    </button>
+  </li>
+  <li
+    className="line"
+    role="presentation"
+  />
+</ul>
+`;

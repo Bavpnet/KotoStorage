@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InformationSection renders correctly 1`] = `
+<section
+  className="infoPar "
+>
+  <h3>
+    Information
+  </h3>
+  <div
+    className="pars"
+  >
+    <p>
+      This is the first paragraph.
+    </p>
+    <br />
+    <p>
+      This is the second paragraph.
+    </p>
+  </div>
+  <span
+    className="low"
+  />
+  <p
+    className="par3"
+  >
+    This is the third paragraph.
+  </p>
+</section>
+`;
