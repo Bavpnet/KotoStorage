@@ -3,8 +3,8 @@ services:
   webapps:
     build:
       context: '.'
-      args:
-        REACT_APP_BASE_URL: 'https://api-sna.dropteam.ru'
     restart: on-failure
     ports:
       - '80:80'
+    environment:
+      - "API_URL=production.example.com"

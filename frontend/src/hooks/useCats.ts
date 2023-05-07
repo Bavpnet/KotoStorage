@@ -10,7 +10,7 @@ export const useCats = () => {
 
   const fetchCats = async () => {
     try {
-      const response = await fetch(`${process.env.REACT_APP_API_URL}/cats/`, {
+      const response = await fetch(`${window._env_.API_URL}/cats/`, {
         headers: {
           Accept: 'application/json',
           'Content-Type': 'application/json'
