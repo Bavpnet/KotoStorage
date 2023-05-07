@@ -4,6 +4,8 @@ import { Navbar } from './components/Navbar'
 
 const App = () => {
   return (
+    // <p>{window._env_.API_URL}</p>
+
     <div className="app">
       <Navbar />
       <Outlet />
