@@ -20,6 +20,7 @@
     "start": "chmod +x ./env.sh && ./env.sh && cp env-config.js ./public/ && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "CI=true npm test -- --env=jsdom --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

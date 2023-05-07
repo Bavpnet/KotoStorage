@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`GalleryGrid renders correctly 1`] = `
+<div
+  className="notFound"
+>
+  <h3>
+    Cats not found
+  </h3>
+</div>
+`;
