@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: backend
-        image: keeperror/kotostorage-backend:1.0.1
+        image: keeperror/kotostorage-backend:latest
         ports:
         - containerPort: 8000
         env:
