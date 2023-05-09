@@ -17,6 +17,9 @@ This web application is avaible by following link: https://sna.dropteam.ru/
 
 ![изображение](https://user-images.githubusercontent.com/88327718/237034648-cb3051de-52ee-483a-8209-bcba6aa3d5a9.png)
 
+## Video demo
+https://youtu.be/WO-JEbcmewM
+
 ## Frontend production building & deploying
 
 In `/frontend` folder:
