@@ -10,14 +10,12 @@ The web appliaction is designed to provide a gallery of cats for people who are 
 This web application is avaible by following link: https://sna.dropteam.ru/
 
 ## Demonstration
-About page:
-<img width="1440" alt="изображение" src="https://user-images.githubusercontent.com/88327718/237022463-eda81797-d272-41f6-a6c5-df244793acdd.png">
-Upload page:
-<img width="1144" alt="изображение" src="https://user-images.githubusercontent.com/88327718/237022811-a54332c6-47f3-4c16-87fa-eedef1447e53.png">
-Gallery page:
-<img width="963" alt="изображение" src="https://user-images.githubusercontent.com/88327718/237022898-0f15f921-14a2-4fc2-9351-529bef24abd5.png">
-Adaptability to various devices:
-Frame 2.png![изображение](https://user-images.githubusercontent.com/88327718/237029533-66e73165-8718-44a5-95d9-0799491142dc.png)
+![изображение](https://user-images.githubusercontent.com/88327718/237034543-669e2330-451a-4282-a0de-eae81b24728d.png)
+
+![изображение](https://user-images.githubusercontent.com/88327718/237034612-e6d71c0a-f486-4d86-ae3b-742d19df03d1.png)
+![изображение](https://user-images.githubusercontent.com/88327718/237034631-273cd066-a57c-4c54-bd0c-fb32a3e79d02.png)
+
+![изображение](https://user-images.githubusercontent.com/88327718/237034648-cb3051de-52ee-483a-8209-bcba6aa3d5a9.png)
 
 ## Frontend production building & deploying
 
