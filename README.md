@@ -17,7 +17,7 @@ Upload page:
 Gallery page:
 <img width="963" alt="изображение" src="https://user-images.githubusercontent.com/88327718/237022898-0f15f921-14a2-4fc2-9351-529bef24abd5.png">
 Adaptability to various devices:
-<img width="451" alt="изображение" src="https://user-images.githubusercontent.com/88327718/237022578-abac67a1-262e-46df-882b-856c81d561b2.png">
+Frame 2.png![изображение](https://user-images.githubusercontent.com/88327718/237029533-66e73165-8718-44a5-95d9-0799491142dc.png)
 
 ## Frontend production building & deploying
 
